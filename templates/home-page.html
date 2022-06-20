@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="menu">
+        <img src="assets/menu.svg" alt="menu" id="open">
+      </div>
+      <div class="title">
+        <h2>Lista de compras</h2>
+      </div>
+    </div>
+  </header>
+  <main class="page-body">
+    <div class="container">
+      <div class="content">
+        <div class="input">
+          <form action="">
+            <label class="sr-only" for="add-item">Informar item</label>
+            <input type="text" id="id-item" name="item" placeholder="Informar item">
+            <button nome="adicionar">Adicionar</button>
+          </form>
+        </div>
+        <scroll-container>
+          <div class="box-list">
+            <ul>
+              <li><input type="checkbox"><span>codigo php</span></li>
+            </ul>
+          </div>
+        </scroll-container>
+      </div>
+    </div>
+    <!-- Rodapé -->
+    <div class="rodape">
+      <footer>&copy;ErryK - Ano atual</footer>
+    </div>
+  </main>
+
+
+  <!-- MODAL -->
+  <div class="box-modal">
+    <div class="modal">
+      <div class="modal-header"><div class="close"></div></div>
+      <div class="modal-content">
+        <ul>
+          <li><a href="logout.php">Sair</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/modal.js"></script>
+</body>
+</html>
